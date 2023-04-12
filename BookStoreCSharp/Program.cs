@@ -11,7 +11,7 @@
  * Se la copertina flessibile è disponibile
  */
 
-// Lista dei dati del Libro
+// Lista dei dati del libro
 string title = "Clean Code: A Handbook of Agile Software Craftsmanship";
 string author = "Robert C. Martin";
 long isbn = 9780132350884;
@@ -22,8 +22,8 @@ float height = 2.79f;
 float depth = 23.37f;
 float averageRating = 4.7f;
 int numberOfReviews = 5414;
-string kindle = "Formato Kindle disponibile";
-string flexibleCover = "Copertina flessibile disponibile";
+bool kindle = true;
+bool flexibleCover = true;
 
 // Stampare le informazioni in console
 Console.WriteLine("-------- IL LIBRO DI OGGI: " + title + " di " + author + " ------------");
@@ -31,11 +31,11 @@ Console.WriteLine("Informazioni generiche:");
 Console.WriteLine("ISBN: " + isbn);
 Console.WriteLine("Numero delle pagine: " + numberOfPages + " pagine");
 Console.WriteLine("Peso del libro: " + weight + " g");
-Console.WriteLine("Dimensioni del libro: " + width + " cm " + height + " cm " + depth + " cm ");
+Console.WriteLine("Dimensioni del libro: " + width + " cm x " + height + " cm x " + depth + " cm");
 Console.WriteLine();
 Console.WriteLine("Informazioni Amazon:");
 Console.WriteLine("Numero di recensioni: " + numberOfReviews + " recensioni");
 Console.WriteLine("Valutazione media: " + averageRating + " stelline");
-Console.WriteLine("Kindle: " + kindle);
-Console.WriteLine("Copertina: " + flexibleCover);
+Console.WriteLine("Kindle disponibile: " + kindle);
+Console.WriteLine("Copertina flessibile: " + flexibleCover);
 Console.WriteLine("---------------------------------------------------------------------------");
